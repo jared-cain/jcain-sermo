@@ -19,7 +19,7 @@ module.export = (function () {
                 if (window.matchMedia("(min-width: 768px)").matches){
                     carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
                 } else {
-                    carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
+                    carousel.style['transform'] = `translateZ(-412px) rotateY(${theta}deg)`;
                 }
                 console.log("im clicked");
             };

@@ -96,12 +96,12 @@ p {
 }
 
 .carousel-inner-container {
-    width: 300;
+    width: 300px;
     height: 150px;
     position: relative;
     margin: 0 auto 40px;
     /*border: 1px solid #CCC;*/
-    perspective: 319px;
+    perspective: 1100px;
     margin-right: auto;
     margin-left: auto;
     max-width: 1000px;
@@ -112,7 +112,7 @@ p {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transform: translateZ( -577px );
+    transform: translateZ( -412px );
     transition: transform 1s;
 }
 
@@ -134,7 +134,7 @@ p {
 #options {
     width: 100%;
     position: absolute;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 #carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 577px ); }
