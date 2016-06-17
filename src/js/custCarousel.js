@@ -15,7 +15,12 @@ module.export = (function () {
             onNavButtonClick = function(e) {
                 var increment = parseInt(event.target.getAttribute("data-increment"));
                 theta += ( 360 / panelCount ) * increment * -1;
-                carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
+
+                if (window.matchMedia("(min-width: 768px)").matches){
+                    carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
+                } else {
+                    carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
+                }
                 console.log("im clicked");
             };
 
