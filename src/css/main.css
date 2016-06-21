@@ -139,7 +139,7 @@ p {
 
 .carousel-container {
     position: absolute;
-    top: 25%;
+    top: 15%;
     width: 100%;
 }
 
@@ -179,6 +179,16 @@ p {
     text-align: center;
 }
 
+#carousel figure img {
+    width: inherit;
+    height: inherit;
+}
+
+#carousel figure p {
+    color: #fff;
+    margin-top: -30px;
+}
+
 #options {
     width: 100%;
     position: absolute;
@@ -196,12 +206,6 @@ p {
     #carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ( 412px ); }
     #carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ( 412px ); }
     #carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ( 412px ); }
-
-    .carousel-container {
-        position: absolute;
-        top: 25%;
-        width: 100%;
-    }
 
     .carousel-inner-container {
         width: 250px;
@@ -261,7 +265,7 @@ p {
 
     .carousel-container {
         position: absolute;
-        top: 25%;
+        top: 10%;
         width: 100%;
     }
 
@@ -299,6 +303,16 @@ p {
         font-weight: bold;
         color: white;
         text-align: center;
+    }
+
+    #carousel figure img {
+        width: inherit;
+        height: inherit;
+    }
+
+    #carousel figure p {
+        color: #fff;
+        margin-top: -30px;
     }
 
     #options {
