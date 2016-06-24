@@ -14,10 +14,14 @@ module.export = (function () {
 
             onNavButtonClick = function(e) {
                 var increment = parseInt(event.target.getAttribute("data-increment"));
-                theta += ( 360 / panelCount ) * increment * -1;
+                if (theta >= 360 || theta <= -360) {
+                    theta = 0;
+                } else {
+                    theta += ( 360 / panelCount ) * increment * -1;
+                }
 
                 if (window.matchMedia("(min-width: 768px)").matches){
-                    carousel.style['transform'] = `translateZ(-577px) rotateY(${theta}deg)`;
+                    carousel.style['transform'] = `translateZ(-615px) rotateY(${theta}deg)`;
                 } else if (window.matchMedia("((min-width:413px) and (max-width:767px))")) {
                     carousel.style['transform'] = `translateZ(-412px) rotateY(${theta}deg)`;
                 } else {

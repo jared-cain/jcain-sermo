@@ -1,14 +1,13 @@
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 html,body {
-  /*margin: 0;
-  padding: 0;*/
-  width: 100% !important;
-  height: 100% !important;
+    overflow-x: hidden;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 body {
-    display: table;
+    /*display: table;*/
 }
 
 hr {
@@ -112,6 +111,19 @@ p {
     }
 }
 
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%
+    }
+}
 
 /* 3D CAROUSEL BEGIN */
 
@@ -145,9 +157,8 @@ p {
 
 .carousel-inner-container {
     width: 250px;
-    height: 150px;
+    height: 165px;
     position: relative;
-    margin: 0 auto 40px;
     /*border: 1px solid #CCC;*/
     perspective: 1100px;
     margin-right: auto;
@@ -189,6 +200,18 @@ p {
     margin-top: -30px;
 }
 
+.carousel-desc {
+    width: 90%;
+    position: relative;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-desc p {
+    color: black;
+}
+
 #options {
     width: 100%;
     position: absolute;
@@ -209,9 +232,8 @@ p {
 
     .carousel-inner-container {
         width: 250px;
-        height: 150px;
+        height: 165px;
         position: relative;
-        margin: 0 auto 40px;
         /*border: 1px solid #CCC;*/
         perspective: 1100px;
         margin-right: auto;
@@ -243,6 +265,10 @@ p {
         text-align: center;
     }
 
+    .carousel-desc {
+        width: 75%;
+    }
+
     #options {
         width: 100%;
         position: absolute;
@@ -253,27 +279,26 @@ p {
 
 @media(min-width:768px) {
 
-    #carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(2) { transform: rotateY(  40deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(3) { transform: rotateY(  80deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(4) { transform: rotateY( 120deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(5) { transform: rotateY( 160deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(6) { transform: rotateY( 200deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ( 577px ); }
-    #carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ( 577px ); }
+    #carousel figure:nth-child(1) { transform: rotateY(   0deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(2) { transform: rotateY(  40deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(3) { transform: rotateY(  80deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(4) { transform: rotateY( 120deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(5) { transform: rotateY( 160deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(6) { transform: rotateY( 200deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(7) { transform: rotateY( 240deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(8) { transform: rotateY( 280deg ) translateZ( 615px ); }
+    #carousel figure:nth-child(9) { transform: rotateY( 320deg ) translateZ( 615px ); }
 
     .carousel-container {
         position: absolute;
-        top: 10%;
+        top: 15%;
         width: 100%;
     }
 
     .carousel-inner-container {
-        width: 420px;
-        height: 140px;
+        width: 500px;
+        height: 260px;
         position: relative;
-        margin: 0 auto 40px;
         /*border: 1px solid #CCC;*/
         perspective: 1100px;
         margin-right: auto;
@@ -286,14 +311,14 @@ p {
         height: 100%;
         position: absolute;
         transform-style: preserve-3d;
-        transform: translateZ( -577px );
+        transform: translateZ( -615px );
         transition: transform 1s;
     }
 
     #carousel figure {
         display: block;
         position: absolute;
-        width: 386px;
+        width: 420px;
         height: 240.56px;
         left: 10px;
         top: 10px;
@@ -315,31 +340,20 @@ p {
         margin-top: -30px;
     }
 
+    .carousel-desc {
+        width: 50%;
+    }
+
     #options {
         width: 100%;
         position: absolute;
-        padding-top: 80px;
     }
 }
 /* 3D CAROUSEL END */
 
-header {
-    position: relative;
-    width: 100%;
-    min-height: 100%;
-    text-align: center;
-    color: #fff;
-}
-
-@media(min-width:768px) {
-    header {
-        min-height: 100%
-    }
-}
 
 .footer {
-    display: table-row;
-    height: 1px;
+    height: 50px;
     /*width: 100%;
     position: absolute;
     bottom: 0;

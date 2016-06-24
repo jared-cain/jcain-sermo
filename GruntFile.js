@@ -41,6 +41,16 @@ module.exports = function(grunt) {
 				dest: "dist/js/bundle.js"
 			}
 		},
+        watch: {
+            css: {
+                files: ["src/css/*.css"],
+                tasks: ["css"]
+            },
+            scripts: {
+                files: ["app-client.js", "src/js/*.js"],
+                tasks: ["js"]
+            }
+        }
     });
 
     grunt.loadNpmTasks("grunt-contrib-jshint");
@@ -48,6 +58,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks("grunt-contrib-cssmin");
     grunt.loadNpmTasks("grunt-autoprefixer");
     grunt.loadNpmTasks("grunt-browserify");
+    grunt.loadNpmTasks("grunt-contrib-watch");
 
     grunt.registerTask("css", ["less", "cssmin", "autoprefixer"]);
     grunt.registerTask("js", ["browserify"]);
